@@ -15,7 +15,7 @@ var miTitulo = document.querySelector('h1');
 function seleccionnombre(){
 	var miNombre = prompt('Por favor ingresa tu nombre.');
 	localStorage.setItem('nombre', miNombre);
-	miTitulo.innerHTML = 'hola vos sos: ' + miNombre;
+	miTitulo.innerHTML = 'Estamos probando JavaScript, ' + miNombre;
 }
 
 if(!localStorage.getItem('nombre')) {
@@ -23,7 +23,7 @@ if(!localStorage.getItem('nombre')) {
 }
 else {
     var storedName = localStorage.getItem('nombre');
-    miTitulo.innerHTML = 'Mozilla is cool, ' + storedName;
+    miTitulo.innerHTML = 'JavaScript es muy poderoso, ' + storedName;
 }
 
 miBoton.onclick = function() {
